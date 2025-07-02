@@ -1,0 +1,22 @@
+# Appearence
+theme="rose-pine-moon"
+background-opacity=0.92
+background-blur=40
+maximize=true
+adjust-cell-height = 10%
+mouse-hide-while-typing=true
+macos-option-as-alt = true
+macos-titlebar-style = hidden
+window-decoration=false
+window-padding-y = 10,2
+window-padding-x = 3
+window-padding-color = extend
+window-padding-balance = true
+window-save-state = always
+cursor-style=underline
+clipboard-paste-protection=true
+copy-on-select=true
+
+# Font
+font-family="JetBrains Mono NL Regular"
+font-size=16
