@@ -1,13 +1,12 @@
 # Appearence
-theme="rose-pine-moon"
-background-opacity=0.92
+theme = catppuccin-mocha
+background-opacity=0.98
 background-blur=40
-maximize=true
-adjust-cell-height = 10%
+fullscreen=true
+adjust-cell-height = 45%
 mouse-hide-while-typing=true
 macos-option-as-alt = true
-macos-titlebar-style = hidden
-window-decoration=false
+macos-titlebar-style = transparent
 window-padding-y = 10,2
 window-padding-x = 3
 window-padding-color = extend
@@ -18,5 +17,5 @@ clipboard-paste-protection=true
 copy-on-select=true
 
 # Font
-font-family="JetBrains Mono NL Regular"
+font-family="TX-02"
 font-size=16
