@@ -1,5 +1,6 @@
 # Initialize Oh My Posh with the custom theme
 eval "$(oh-my-posh init zsh --config ~/.config/omp/config.json)"
+eval "$(zoxide init zsh)"
 
 # Optional: Enable command completion
 autoload -U compinit
