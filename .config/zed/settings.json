@@ -24,6 +24,9 @@
   "formatter": "language_server",
   "soft_wrap": "editor_width",
   "hard_tabs": false,
+  "git_panel": {
+    "button": false
+  },
   // ===== CURSOR & SELECTION =====
   "cursor_blink": false,
   "cursor_shape": "bar",
