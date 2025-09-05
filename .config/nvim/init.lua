@@ -81,6 +81,8 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+vim.o.cmdheight = 0
+
 -- Splash Screen Message
 vim.opt.shortmess:append("I")
 
@@ -832,7 +834,7 @@ require('lazy').setup({
       local statusline = require 'mini.statusline'
       -- set use_icons to true if you have a Nerd Font
       statusline.setup {
-        use_icons = false,
+        use_icons = true,
       }
       statusline.section_git = function()
         return '' -- removes git info
