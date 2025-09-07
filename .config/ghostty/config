@@ -2,15 +2,14 @@
 theme = catppuccin-mocha
 background-opacity=0.98
 background-blur=40
-fullscreen=true
-adjust-cell-height = 45%
+adjust-cell-height = 25
+adjust-cursor-height = 25
 mouse-hide-while-typing=true
 macos-option-as-alt = true
 macos-titlebar-style = transparent
-window-padding-y = 10,2
-window-padding-x = 3
-window-padding-color = extend
+window-padding-y = 0
 window-padding-balance = true
+window-padding-color = extend-always
 window-save-state = always
 cursor-style=underline
 clipboard-paste-protection=true
@@ -18,4 +17,4 @@ copy-on-select=true
 
 # Font
 font-family="TX-02"
-font-size=18
+font-size=21
