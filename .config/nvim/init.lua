@@ -828,32 +828,6 @@ require('lazy').setup({
       -- - sr)'  - [S]urround [R]eplace [)] [']
       require('mini.surround').setup()
 
-      -- Simple and easy statusline.
-      --  You could remove this setup call if you don't like it,
-      --  and try some other statusline plugin
-      local statusline = require 'mini.statusline'
-      -- set use_icons to true if you have a Nerd Font
-      statusline.setup {
-        use_icons = true,
-      }
-      statusline.section_git = function()
-        return '' -- removes git info
-      end
-      statusline.section_diagnostics = function()
-        return '' -- removes diagnostics
-      end
-      statusline.section_filename = function()
-        return vim.fn.expand '%:t' -- just the filename
-      end
-
-      statusline.section_fileinfo = function()
-        return '' -- removes filetype/encoding info
-      end
-
-      statusline.section_location = function()
-        return '%l:%c' -- line:column
-      end
-      -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
   },
