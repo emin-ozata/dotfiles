@@ -1,5 +1,5 @@
 # Appearence
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 background-opacity = 0.98
 background-blur = 40
 adjust-cell-height = 25
@@ -17,4 +17,4 @@ copy-on-select = true
 
 # Font
 font-family = "TX-02"
-font-size = 21
+font-size = 22

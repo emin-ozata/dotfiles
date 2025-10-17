@@ -1,5 +1,15 @@
 {
   // ===== APPEARANCE & THEMES =====
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Latte",
@@ -25,7 +35,7 @@
   "soft_wrap": "editor_width",
   "hard_tabs": false,
   "git_panel": {
-    "button": false
+    "button": true
   },
   // ===== CURSOR & SELECTION =====
   "cursor_blink": false,
@@ -137,12 +147,7 @@
     "metrics": false
   },
   // ===== FEATURES & AI =====
-  "features": {
-    "edit_prediction_provider": "none"
-  },
-  "agent": {
-    "enabled": false
-  },
+  "disable_ai" : true,
   // ===== FILE HANDLING =====
   "file_scan_exclusions": [
     ".ruff_cache",
@@ -155,7 +160,8 @@
     "**mypy_cache",
     "**/.svn",
     "**/.hg",
-    "**/Thumbs.db"
+    "**/Thumbs.db",
+    ".pytest_cache"
   ],
   "file_types": {
     "Helm": [
@@ -172,12 +178,8 @@
       ],
       "format_on_save": "on",
       "formatter": [
-        {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
-        },
+        { "code_action": "source.organizeImports.ruff" },
+        { "code_action": "source.fixAll.ruff" },
         {
           "language_server": {
             "name": "ruff"
