@@ -10,7 +10,6 @@ macos-titlebar-style = transparent
 window-padding-y = 0
 window-padding-balance = true
 window-padding-color = extend-always
-window-save-state = always
 cursor-style = underline
 clipboard-paste-protection = true
 copy-on-select = true
@@ -18,3 +17,6 @@ copy-on-select = true
 # Font
 font-family = "TX-02"
 font-size = 22
+macos-icon = xray
+working-directory = home
+window-inherit-working-directory = false
