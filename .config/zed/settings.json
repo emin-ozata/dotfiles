@@ -15,7 +15,7 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha"
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Catppuccin Mocha",
   // ===== FONTS & TYPOGRAPHY =====
   "buffer_font_family": "TX-02",
   "buffer_font_size": 18,
@@ -38,7 +38,7 @@
     "button": true
   },
   // ===== CURSOR & SELECTION =====
-  "cursor_blink": false,
+  "cursor_blink": true,
   "cursor_shape": "bar",
   "hide_mouse": "on_typing",
   "current_line_highlight": "all",
@@ -80,7 +80,7 @@
     "show_close_button": "hover"
   },
   "tab_bar": {
-    "show": false
+    "show": true
   },
   "preview_tabs": {
     "enabled": false
@@ -114,9 +114,6 @@
   "collaboration_panel": {
     "button": false
   },
-  "chat_panel": {
-    "button": "never"
-  },
   "notification_panel": {
     "button": false
   },
@@ -147,7 +144,7 @@
     "metrics": false
   },
   // ===== FEATURES & AI =====
-  "disable_ai" : true,
+  "disable_ai": true,
   // ===== FILE HANDLING =====
   "file_scan_exclusions": [
     ".ruff_cache",
@@ -178,8 +175,12 @@
       ],
       "format_on_save": "on",
       "formatter": [
-        { "code_action": "source.organizeImports.ruff" },
-        { "code_action": "source.fixAll.ruff" },
+        {
+          "code_action": "source.organizeImports.ruff"
+        },
+        {
+          "code_action": "source.fixAll.ruff"
+        },
         {
           "language_server": {
             "name": "ruff"
