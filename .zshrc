@@ -50,6 +50,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(direnv hook zsh)"
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/emin.ozata/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+export XDG_CONFIG_HOME="$HOME/.config"

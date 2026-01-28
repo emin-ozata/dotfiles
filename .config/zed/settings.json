@@ -1,5 +1,12 @@
 {
   // ===== APPEARANCE & THEMES =====
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "agent": {
+    "button": false,
+    "model_parameters": []
+  },
   "show_edit_predictions": false,
   "edit_predictions": {
     "mode": "subtle",
@@ -11,20 +18,20 @@
     "enabled_in_text_threads": false
   },
   "theme": {
-    "mode": "dark",
+    "mode": "system",
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha"
   },
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": "Catppuccin Latte",
   // ===== FONTS & TYPOGRAPHY =====
   "buffer_font_family": "TX-02",
-  "buffer_font_size": 18,
+  "buffer_font_size": 16,
   "buffer_font_weight": 400,
   "buffer_line_height": {
-    "custom": 1.8
+    "custom": 1.6
   },
   "ui_font_family": "TX-02",
-  "ui_font_size": 18,
+  "ui_font_size": 16,
   "ui_font_weight": 200,
   // ===== EDITOR BEHAVIOR =====
   "base_keymap": "VSCode",
@@ -118,6 +125,7 @@
     "button": false
   },
   "terminal": {
+    "font_family": "TX-02",
     "button": false
   },
   "debugger": {
@@ -144,7 +152,7 @@
     "metrics": false
   },
   // ===== FEATURES & AI =====
-  "disable_ai": true,
+  "disable_ai": false,
   // ===== FILE HANDLING =====
   "file_scan_exclusions": [
     ".ruff_cache",

@@ -13,6 +13,7 @@ window-padding-color = extend-always
 cursor-style = underline
 clipboard-paste-protection = true
 copy-on-select = true
+window-save-state=always
 
 # Font
 font-family = "TX-02"
@@ -20,3 +21,4 @@ font-size = 22
 macos-icon = xray
 working-directory = home
 window-inherit-working-directory = false
+keybind = shift+enter=text:\x1b\r
