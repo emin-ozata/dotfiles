@@ -1,0 +1,30 @@
+[delta]
+    navigate = true
+    light = false
+    side-by-side = true
+    line-numbers = true
+    file-style = bold yellow
+    file-decoration-style = none
+    hunk-header-style = file line-number syntax
+    hunk-header-decoration-style = blue box
+    minus-style = syntax "#3f0001"
+    minus-emph-style = syntax "#901011"
+    plus-style = syntax "#002800"
+    plus-emph-style = syntax "#006000"
+    whitespace-error-style = reverse red
+    blame-palette = "#1d2021 #282828 "#32302f"
+    grep-line-number-style = yellow bold
+    true-color = always
+    pager = less -FRX
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default

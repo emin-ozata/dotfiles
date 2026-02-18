@@ -1,5 +1,5 @@
 # Appearence
-theme = Catppuccin Mocha
+theme = Dracula
 background-opacity = 0.98
 background-blur = 40
 adjust-cell-height = 25
@@ -20,5 +20,5 @@ font-family = "TX-02"
 font-size = 22
 macos-icon = xray
 working-directory = home
-window-inherit-working-directory = false
+window-inherit-working-directory = true
 keybind = shift+enter=text:\x1b\r

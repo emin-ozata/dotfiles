@@ -44,6 +44,7 @@ alias dr='docker run --rm -i -t'
 alias dx='docker exec -i -t'
 alias db='docker build -t'
 alias cat='bat'
+alias airflow='airflowctl'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

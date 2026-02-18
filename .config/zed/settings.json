@@ -1,14 +1,13 @@
 {
   // ===== APPEARANCE & THEMES =====
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
+  "agent_ui_font_size": 18.0,
   "agent": {
     "button": false,
     "model_parameters": []
   },
   "show_edit_predictions": false,
   "edit_predictions": {
+    "provider": "zed",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
@@ -18,20 +17,20 @@
     "enabled_in_text_threads": false
   },
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha"
   },
   "icon_theme": "Catppuccin Latte",
   // ===== FONTS & TYPOGRAPHY =====
   "buffer_font_family": "TX-02",
-  "buffer_font_size": 16,
+  "buffer_font_size": 18,
   "buffer_font_weight": 400,
   "buffer_line_height": {
-    "custom": 1.6
+    "custom": 1.8
   },
   "ui_font_family": "TX-02",
-  "ui_font_size": 16,
+  "ui_font_size": 18,
   "ui_font_weight": 200,
   // ===== EDITOR BEHAVIOR =====
   "base_keymap": "VSCode",
@@ -152,7 +151,7 @@
     "metrics": false
   },
   // ===== FEATURES & AI =====
-  "disable_ai": false,
+  "disable_ai": true,
   // ===== FILE HANDLING =====
   "file_scan_exclusions": [
     ".ruff_cache",
@@ -166,7 +165,8 @@
     "**/.svn",
     "**/.hg",
     "**/Thumbs.db",
-    ".pytest_cache"
+    ".pytest_cache",
+    ".venv"
   ],
   "file_types": {
     "Helm": [
