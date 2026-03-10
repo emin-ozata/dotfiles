@@ -1,12 +1,10 @@
 # Appearence
-theme = Dracula
+theme = TokyoNight
 background-opacity = 0.98
 background-blur = 40
-adjust-cell-height = 25
-adjust-cursor-height = 21
 mouse-hide-while-typing= true
 macos-option-as-alt = true
-macos-titlebar-style = transparent
+macos-titlebar-style = hidden 
 window-padding-y = 0
 window-padding-balance = true
 window-padding-color = extend-always
@@ -14,10 +12,15 @@ cursor-style = underline
 clipboard-paste-protection = true
 copy-on-select = true
 window-save-state=always
+window-colorspace = display-p3
+scroll-to-bottom = output
+link-previews = true
 
 # Font
-font-family = "TX-02"
-font-size = 22
+font-family = "TX-02 Retina"
+font-size = 18
+adjust-cell-height = 28%
+font-thicken = true
 macos-icon = xray
 working-directory = home
 window-inherit-working-directory = true

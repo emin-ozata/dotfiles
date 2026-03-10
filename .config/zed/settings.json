@@ -18,8 +18,14 @@
   },
   "theme": {
     "mode": "dark",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "light": "Gruvbox Light Hard",
+    "dark": "Tokyo Night"
+  },
+  "theme_overrides": {
+    "Tokyo Night": {
+      "editor.document_highlight.read_background": "#00000000",
+      "editor.document_highlight.write_background": "#00000000"
+    }
   },
   "icon_theme": "Catppuccin Latte",
   // ===== FONTS & TYPOGRAPHY =====
@@ -27,7 +33,7 @@
   "buffer_font_size": 18,
   "buffer_font_weight": 400,
   "buffer_line_height": {
-    "custom": 1.8
+    "custom": 2
   },
   "ui_font_family": "TX-02",
   "ui_font_size": 18,
@@ -40,8 +46,9 @@
   "formatter": "language_server",
   "soft_wrap": "editor_width",
   "hard_tabs": false,
-  "git_panel": {
-    "button": true
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "drag_and_drop_selection": {
+    "enabled": false
   },
   // ===== CURSOR & SELECTION =====
   "cursor_blink": true,
@@ -59,7 +66,8 @@
   "gutter": {
     "line_numbers": true,
     "runnables": false,
-    "folds": true
+    "folds": true,
+    "min_line_number_digits": 0
   },
   "indent_guides": {
     "enabled": false
@@ -71,6 +79,7 @@
   "inline_code_actions": false,
   // ===== SCROLLBARS =====
   "scrollbar": {
+    "git_diff": true,
     "show": "never",
     "axes": {
       "horizontal": false,
@@ -86,20 +95,29 @@
     "show_close_button": "hover"
   },
   "tab_bar": {
+    "show_tab_bar_buttons": false,
     "show": true
   },
   "preview_tabs": {
     "enabled": false
   },
   // ===== PANELS & UI ELEMENTS =====
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_project_items": false,
+    "show_branch_name": false,
+    "show_user_picture": false
+  },
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false
   },
   "project_panel": {
-    "button": false,
-    "default_width": 240,
     "dock": "right",
+    "default_width": 240,
+    "hide_root": true,
+    "starts_open": false,
+    "button": false,
     "entry_spacing": "comfortable",
     "file_icons": true,
     "folder_icons": true,
@@ -124,11 +142,18 @@
     "button": false
   },
   "terminal": {
-    "font_family": "TX-02",
+    "font_weight": 400.0,
+    "font_family": "Monaspace Neon NF",
     "button": false
   },
   "debugger": {
     "button": false
+  },
+  "status_bar": {
+    "experimental.show": false
+  },
+  "file_finder": {
+    "modal_max_width": "large"
   },
   // ===== PANE & WINDOW MANAGEMENT =====
   "active_pane_modifiers": {
@@ -181,7 +206,7 @@
         "ruff",
         "pyright"
       ],
-      "format_on_save": "on",
+      "format_on_save": "off",
       "formatter": [
         {
           "code_action": "source.organizeImports.ruff"

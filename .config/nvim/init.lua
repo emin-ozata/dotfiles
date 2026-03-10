@@ -800,7 +800,18 @@ require('lazy').setup({
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
     --
-    { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
+    {
+      'folke/tokyonight.nvim',
+      name = 'tokyonight',
+      priority = 1000,
+      lazy = false,
+      config = function()
+        require('tokyonight').setup {
+          style = 'night',
+        }
+        vim.cmd.colorscheme 'tokyonight'
+      end,
+    },
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     -- Load the colorscheme here.
     -- Like many other themes, this one has different styles, and you could load
