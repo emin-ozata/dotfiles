@@ -36,7 +36,7 @@ eval "$(direnv hook zsh)"
 
 # Aliases
 alias ls='eza --icons --color=always'
-alias la='ls -lAhf --no-permissions'
+alias la='ls -lAH --no-permissions'
 alias cl='clear;clear'
 alias dr='docker run --rm -it'
 alias dx='docker exec -it'
